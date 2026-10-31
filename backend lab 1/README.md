@@ -114,7 +114,7 @@ Screenshots are not currently available in this workspace. The following relativ
 
 Home Route
 
-![Screenshot](/Screenshot%202026-10-31%20203653.png)
+![Screenshot](./Screenshot%202026-10-31%20203653.png)
 
 About Route
 ![Screenshot](./Screenshot%202026-10-17%20202643.png)
