@@ -117,7 +117,8 @@ Home Route
 ![Screenshot](./Screenshot%202026-10-31%20203653.png)
 
 About Route
-![Screenshot](./Screenshot%202026-10-17%20202643.png)
+
+![Screenshot](/Screenshot%202026-10-31%20203829.png)
 
 Time Route
 ![Screenshot](./Screenshot%202026-10-17%20202714.png)
