@@ -1,0 +1,111 @@
+
+### 1. HOME API
+GET http://localhost:3000/
+
+
+### 2. GET ALL BOOKS
+GET http://localhost:3000/books
+
+
+### 3. GET BOOK BY ID
+GET http://localhost:3000/books/1
+
+
+### 4. SEARCH BOOKS
+GET http://localhost:3000/books?search_q=Harry
+
+
+### 5. SORT BOOKS ASCENDING
+GET http://localhost:3000/books?order_by=price&order=ASC
+
+
+### 6. SORT BOOKS DESCENDING
+GET http://localhost:3000/books?order_by=price&order=DESC
+
+
+### 7. PAGINATION
+GET http://localhost:3000/books?limit=2&offset=0
+
+
+### 8. PRICE RANGE FILTER
+GET http://localhost:3000/books?min_price=300&max_price=500
+
+
+### 9. COMBINE SEARCH, SORT AND PAGINATION
+GET http://localhost:3000/books?search_q=The&order_by=price&order=ASC&limit=5&offset=0
+
+
+### 10. CREATE NEW BOOK
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "JavaScript Basics",
+    "author": "John Smith",
+    "price": 350
+}
+
+
+### 11. CREATE BOOK WITH INVALID DATA
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "",
+    "author": "",
+    "price": "abc"
+}
+
+
+### 12. UPDATE BOOK
+PUT http://localhost:3000/books/1
+Content-Type: application/json
+
+{
+    "title": "Updated Harry Potter",
+    "author": "J.K. Rowling",
+    "price": 550
+}
+
+
+### 13. UPDATE NON-EXISTING BOOK
+PUT http://localhost:3000/books/100
+Content-Type: application/json
+
+{
+    "title": "Test Book",
+    "author": "Test Author",
+    "price": 200
+}
+
+
+### 14. DELETE BOOK
+DELETE http://localhost:3000/books/2
+
+
+### 15. DELETE NON-EXISTING BOOK
+DELETE http://localhost:3000/books/100
+
+
+### 16. INVALID BOOK ID
+GET http://localhost:3000/books/100
+
+
+### 17. INVALID SORT FIELD
+GET http://localhost:3000/books?order_by=password
+
+
+### 18. INVALID SORT ORDER
+GET http://localhost:3000/books?order=RANDOM
+
+
+### 19. INVALID PAGINATION
+GET http://localhost:3000/books?limit=-5&offset=-1
+
+
+### 20. INVALID PRICE FILTER
+GET http://localhost:3000/books?min_price=abc
+
+
+### 21. INVALID ROUTE
+GET http://localhost:3000/students
